@@ -1,0 +1,35 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "api-server": "./bin/api-server.js"
+  },
+  "scripts": {
+    "test": "./test/run_integration_tests.sh",
+    "build": "./node_modules/.bin/tsc",
+    "reset-db": "rm -f ./data/titanic.db && cp ./data/original.db ./data/titanic.db",
+    "start": "./bin/api-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/chai": "^4.0.10",
+    "@types/express": "^4.11.0",
+    "@types/mocha": "^2.2.45",
+    "@types/request": "^2.0.9",
+    "@types/sqlite3": "^3.1.1",
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "express": "^4.16.2",
+    "mocha": "^4.1.0",
+    "request": "^2.83.0",
+    "sqlite3": "^3.1.13",
+    "ts-node": "^4.1.0",
+    "tsconfig-paths": "^2.6.0",
+    "typescript": "^2.6.2"
+  },
+  "private": true
+}

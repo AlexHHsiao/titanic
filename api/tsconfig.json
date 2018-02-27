@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "moduleResolution": "node",
+        "target": "es5",
+        "outDir": "./dist",
+        "lib": [
+            "es2015"
+        ],
+        "downlevelIteration": true,
+        "paths": {
+            "src/*": [
+                "./src/*"
+            ]
+        },
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "src/**/*",
+        "types/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
